@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  kabayan-aircon-web:
+    image: nginx:alpine
+    container_name: kabayan-aircon
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/usr/share/nginx/html:ro
+    restart: unless-stopped
+    networks:
+      - kabayan-network
+    labels:
+      - "com.kabayan.description=Kabayan Aircon Website"
+      - "com.kabayan.service=web"
+
+networks:
+  kabayan-network:
+    driver: bridge
