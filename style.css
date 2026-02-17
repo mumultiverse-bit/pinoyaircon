@@ -18,7 +18,7 @@
   /* Gradients */
   --gradient-primary: linear-gradient(135deg, #0a1628 0%, #1a2942 100%);
   --gradient-accent: linear-gradient(135deg, #00d4ff 0%, #0088ff 100%);
-  --gradient-hero: linear-gradient(135deg, rgba(10, 22, 40, 0.95) 0%, rgba(0, 136, 255, 0.3) 100%);
+  --gradient-hero: linear-gradient(135deg, rgba(10, 22, 40, 0.7) 0%, rgba(0, 136, 255, 0.1) 100%);
   
   /* Spacing */
   --spacing-xs: 0.5rem;
@@ -255,7 +255,7 @@ p {
   right: 0;
   bottom: 0;
   background: url('images/hero-aircon.png') center/cover no-repeat;
-  opacity: 0.15;
+  opacity: 0.35;
   z-index: 0;
 }
 
