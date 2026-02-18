@@ -7,13 +7,30 @@
     <meta name="keywords" content="aircon service, air conditioning repair, aircon maintenance, Philippines">
     <meta name="author" content="Kabayan Aircon">
     
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="fb:app_id" content="1234567890123456" />
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Kabayan Aircon - Professional Aircon Services">
-    <meta property="og:description" content="Expert aircon servicing by trusted Filipino technicians">
+    <meta property="og:title" content="Kabayan Aircon - Professional Aircon Services in Singapore">
+    <meta property="og:description" content="Expert aircon servicing, repair, and maintenance by trusted Filipino technicians. Same-day service available. WhatsApp us now!">
+    <meta property="og:url" content="https://pinoyaircon.com/">
+    <meta property="og:image" content="https://pinoyaircon.com/images/pinoyaircon.png">
+    <meta property="og:image:secure_url" content="https://pinoyaircon.com/images/pinoyaircon.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt" content="Kabayan Aircon Logo">
+    <meta property="og:site_name" content="Kabayan Aircon Singapore">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@kabayanaircon">
+    <meta name="twitter:title" content="Kabayan Aircon - Professional Aircon Services in Singapore">
+    <meta name="twitter:description" content="Expert aircon servicing and repair. Same-day service. Book now on WhatsApp!">
+    <meta name="twitter:image" content="https://pinoyaircon.com/images/pinoyaircon.png">
+    <meta name="twitter:image:alt" content="Kabayan Aircon Logo">
     
     <title>Kabayan Aircon - Professional Aircon Servicing & Repair</title>
     
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='50' fill='%23003087'/><rect y='50' width='100' height='50' fill='%23CE1126'/><circle cx='50' cy='50' r='12' fill='%23FFD700'/><g transform='translate(30, 50)'><polygon points='0,-6 2,-2.5 6,-2.5 2.5,0.5 4,5 0,2 -4,5 -2.5,0.5 -6,-2.5 -2,-2.5' fill='%23FFD700'/></g><g transform='translate(60, 35)'><polygon points='0,-6 2,-2.5 6,-2.5 2.5,0.5 4,5 0,2 -4,5 -2.5,0.5 -6,-2.5 -2,-2.5' fill='%23FFD700'/></g><g transform='translate(60, 65)'><polygon points='0,-6 2,-2.5 6,-2.5 2.5,0.5 4,5 0,2 -4,5 -2.5,0.5 -6,-2.5 -2,-2.5' fill='%23FFD700'/></g></svg>" />
+    <link rel="icon" type="image/png" href="images/pinoyaircon.png?v=12" />
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,13 +88,14 @@
             backdrop-filter: blur(10px);
             border-bottom: 1px solid rgba(0, 212, 255, 0.1);
             z-index: 1000;
-            padding: 1rem 0;
+            padding: 0.5rem 0;
         }
 
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: relative;
         }
 
         .logo {
@@ -87,18 +105,37 @@
             font-size: 1.3rem;
             font-weight: 700;
             text-decoration: none;
-            color: #00d4ff;
             font-family: 'Poppins', sans-serif;
             transition: all 0.3s;
+            position: relative;
+            z-index: 1001;
         }
 
-        .logo-svg {
-            width: 40px;
-            height: 40px;
-            min-width: 40px;
+        .logo-text {
+            background: linear-gradient(90deg, #FFD700 0%, #003087 20%, #00d4ff 40%, #CE1126 60%, #FFD700 80%, #003087 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: waveColor 10s ease-in-out infinite;
+        }
+
+        @keyframes waveColor {
+            0%, 100% {
+                background-position: 0% center;
+            }
+            50% {
+                background-position: 100% center;
+            }
+        }
+
+        .logo-img {
+            width: 80px;
+            height: 80px;
+            min-width: 80px;
             display: block;
-            filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.4));
             transition: all 0.3s ease;
+            margin-top: 15px;
         }
 
         .logo:hover {
@@ -106,8 +143,7 @@
             text-shadow: 0 0 10px rgba(0, 212, 255, 0.4);
         }
 
-        .logo:hover .logo-svg {
-            filter: drop-shadow(0 0 12px rgba(0, 212, 255, 0.8));
+        .logo:hover .logo-img {
             transform: scale(1.05);
         }
 
@@ -138,7 +174,7 @@
 
         /* Hero Section */
         .hero {
-            padding-top: 180px;
+            padding-top: 220px;
             padding-bottom: 80px;
             background: linear-gradient(135deg, rgba(0, 14, 39, 0.9) 0%, rgba(26, 41, 66, 0.6) 100%);
             background-image: 
@@ -868,6 +904,13 @@
                 padding-bottom: 60px;
             }
 
+            .logo-img {
+                width: 60px;
+                height: 60px;
+                min-width: 60px;
+                margin-top: 10px;
+            }
+
             .nav-links {
                 display: none;
             }
@@ -926,31 +969,8 @@
         <div class="container">
             <nav>
                 <a href="#home" class="logo">
-                    <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Philippine Flag -->
-                        <!-- Blue section (top) -->
-                        <rect width="100" height="50" fill="#003087"/>
-                        <!-- Red section (bottom) -->
-                        <rect y="50" width="100" height="50" fill="#CE1126"/>
-                        <!-- Golden sun at center -->
-                        <circle cx="50" cy="50" r="12" fill="#FFD700"/>
-                        <!-- Three stars around the sun -->
-                        <!-- Left star -->
-                        <g transform="translate(30, 50)">
-                            <polygon points="0,-6 2,-2.5 6,-2.5 2.5,0.5 4,5 0,2 -4,5 -2.5,0.5 -6,-2.5 -2,-2.5" fill="#FFD700"/>
-                        </g>
-                        <!-- Top-right star -->
-                        <g transform="translate(60, 35)">
-                            <polygon points="0,-6 2,-2.5 6,-2.5 2.5,0.5 4,5 0,2 -4,5 -2.5,0.5 -6,-2.5 -2,-2.5" fill="#FFD700"/>
-                        </g>
-                        <!-- Bottom-right star -->
-                        <g transform="translate(60, 65)">
-                            <polygon points="0,-6 2,-2.5 6,-2.5 2.5,0.5 4,5 0,2 -4,5 -2.5,0.5 -6,-2.5 -2,-2.5" fill="#FFD700"/>
-                        </g>
-                        <!-- Cyan accent ring for aircon theme -->
-                        <circle cx="50" cy="50" r="12" fill="none" stroke="#00d4ff" stroke-width="1" opacity="0.6"/>
-                    </svg>
-                    Kabayan Aircon
+                    <img src="images/pinoyaircon.png?v=12" alt="Kabayan Aircon Logo" class="logo-img">
+                    <span class="logo-text">Kabayan Aircon</span>
                 </a>
                 <ul class="nav-links" id="navLinks">
                     <li><a href="#home">Home</a></li>
@@ -1514,20 +1534,22 @@
         // Back to Top Button
         const backToTopBtn = document.getElementById('backToTopBtn');
 
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTopBtn.classList.add('show');
-            } else {
-                backToTopBtn.classList.remove('show');
-            }
-        });
-
-        backToTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
+        if (backToTopBtn) {
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    backToTopBtn.classList.add('show');
+                } else {
+                    backToTopBtn.classList.remove('show');
+                }
             });
-        });
+
+            backToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
     </script>
 
     <!-- Floating WhatsApp Widget -->
